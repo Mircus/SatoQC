@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="sato-logo.png" alt="Sato Quasi-Complex Logo" width="300"/>
+  <img src="sato-logo.png" alt="Sato Quasi-Complex Logo" width="500"/>
   
   # Sato Quasi-Complex
   
