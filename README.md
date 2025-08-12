@@ -1,3 +1,13 @@
+
+<div align="center">
+  <img src="sato-logo.jpg" alt="Sato Quasi-Complex Logo" width="300"/>
+  
+  # Sato Quasi-Complex
+  
+  *A computational framework for analyzing quasi-complex manifolds through Sato's hyperfunction theory.*
+</div>
+
+
 # Sato Quasi-Complex
 
 A computational framework for analyzing quasi-complex manifolds through Sato's hyperfunction theory.
