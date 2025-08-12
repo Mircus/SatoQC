@@ -2,7 +2,7 @@
 
 *A synthetic overview of our cohomological framework*
 
-## Executive Summary
+## Summary
 
 Classical integrability theory asks: *when does an almost complex structure come from a genuine complex structure?* The Newlander-Nirenberg theorem answers this via the Nijenhuis tensor, but provides limited computational tools and geometric insight.
 
@@ -118,9 +118,9 @@ The moduli space of quasi-complex structures becomes:
 - Stratum 0: Integrable structures (𝔐_{complex}(M))
 - Stratum k: Structures with k-th order obstructions
 
-### 3. Sullivan's Conjecture
+### 3. A  Conjecture
 
-**Conjecture (Sullivan):** If all components of M are non-compact, then any quasi-complex structure on M is necessarily integrable.
+**Conjecture (Samuelsen):** If all components of M are non-compact, then any quasi-complex structure on M is necessarily integrable.
 
 **Proposed mechanism:** Cohomology groups H²(ℰ_M, ℬ_M ⊗ Ω^{0,2}_{qc}) vanish on non-compact manifolds, forcing integrability.
 
