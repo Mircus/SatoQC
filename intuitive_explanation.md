@@ -1,160 +1,5 @@
 # The Nations and Turbulence: Understanding Quasi-Complex Manifolds
 
-*An intuitive explanation for Daniele Struppa*
-
-## Visual Illustration: The Nations and Turbulence
-
-<div style="width: 100%; max-width: 900px; margin: 20px auto; background: linear-gradient(135deg, #1a1a2e, #16213e); border-radius: 15px; padding: 30px; color: white; font-family: Arial, sans-serif;">
-
-<h3 style="text-align: center; color: #ffd700; margin-bottom: 30px;">Quasi-Complex Manifold: Two Nations with Different "Imaginary Units"</h3>
-
-<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px;">
-
-  <!-- Nation 1 -->
-  <div style="width: 30%; text-align: center; padding: 20px; background: rgba(255, 107, 107, 0.2); border-radius: 15px; border: 3px solid #ff6b6b;">
-    <h4 style="color: #ff6b6b; margin-bottom: 15px;">🏛️ NATION 1</h4>
-    <p style="color: #ffaaaa; margin-bottom: 10px;"><strong>Twisted Structure J</strong></p>
-    
-    <!-- Coordinate axes visualization -->
-    <div style="position: relative; width: 120px; height: 120px; margin: 20px auto; background: rgba(0,0,0,0.3); border-radius: 10px;">
-      <!-- Real axis -->
-      <div style="position: absolute; top: 50%; left: 10%; right: 10%; height: 2px; background: #ff6b6b; transform: translateY(-50%);"></div>
-      <div style="position: absolute; top: 50%; right: 5%; width: 0; height: 0; border-left: 8px solid #ff6b6b; border-top: 4px solid transparent; border-bottom: 4px solid transparent; transform: translateY(-50%);"></div>
-      <span style="position: absolute; top: 45%; right: -10px; font-size: 12px; color: #ff6b6b;">Re</span>
-      
-      <!-- Imaginary axis (twisted) -->
-      <div style="position: absolute; left: 50%; top: 10%; bottom: 30%; width: 2px; background: #ff6b6b; transform: translateX(-50%) skewX(15deg);"></div>
-      <div style="position: absolute; left: 50%; top: 5%; width: 0; height: 0; border-bottom: 8px solid #ff6b6b; border-left: 4px solid transparent; border-right: 4px solid transparent; transform: translateX(-50%) skewX(15deg);"></div>
-      <span style="position: absolute; left: 55%; top: 0px; font-size: 12px; color: #ff6b6b;">Im</span>
-      <span style="position: absolute; left: 45%; top: 15px; font-size: 10px; color: #ff6b6b;">(twisted)</span>
-    </div>
-    
-    <div style="background: rgba(0,0,0,0.3); padding: 10px; border-radius: 8px; margin-top: 15px;">
-      <p style="font-size: 11px; color: #ffaaaa; margin: 5px 0;"><strong>Local "holomorphic":</strong></p>
-      <p style="font-size: 10px; color: #ffcccc; margin: 0;">f₁ = (x+iy) + (u+i(v+xy/2))</p>
-    </div>
-  </div>
-
-  <!-- Border/Turbulence Zone -->
-  <div style="width: 35%; text-align: center; padding: 20px; background: rgba(255, 217, 61, 0.2); border-radius: 15px; border: 3px dashed #ffd93d;">
-    <h4 style="color: #ffd93d; margin-bottom: 15px;">⚡ BORDER TURBULENCE</h4>
-    
-    <div style="margin: 20px 0;">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin: 15px 0;">
-        <span style="color: #ff6b6b; font-size: 20px;">←</span>
-        <span style="color: #ffd93d; font-weight: bold;">CONFLICT</span>
-        <span style="color: #4ecdc4; font-size: 20px;">→</span>
-      </div>
-    </div>
-    
-    <div style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; margin: 15px 0;">
-      <p style="font-size: 12px; color: #ffd93d; margin: 5px 0;"><strong>Structure Mismatch:</strong></p>
-      <p style="font-size: 11px; color: #ffeeaa; margin: 5px 0;">ΔJ[2,1] = x</p>
-      
-      <p style="font-size: 12px; color: #ffd93d; margin: 10px 0 5px 0;"><strong>Hyperfunction Jump:</strong></p>
-      <p style="font-size: 11px; color: #ffeeaa; margin: 0;">h = δ_border(xy/2)</p>
-    </div>
-    
-    <div style="background: rgba(255, 0, 0, 0.2); padding: 10px; border-radius: 8px; border: 1px solid #ff6666;">
-      <p style="font-size: 11px; color: #ffcccc; margin: 0;"><strong>⚠️ Incompatible "currencies"</strong></p>
-      <p style="font-size: 10px; color: #ffdddd; margin: 5px 0 0 0;">Cannot merge holomorphically!</p>
-    </div>
-  </div>
-
-  <!-- Nation 2 -->
-  <div style="width: 30%; text-align: center; padding: 20px; background: rgba(78, 205, 196, 0.2); border-radius: 15px; border: 3px solid #4ecdc4;">
-    <h4 style="color: #4ecdc4; margin-bottom: 15px;">🏛️ NATION 2</h4>
-    <p style="color: #aaeee8; margin-bottom: 10px;"><strong>Standard Structure J₀</strong></p>
-    
-    <!-- Coordinate axes visualization -->
-    <div style="position: relative; width: 120px; height: 120px; margin: 20px auto; background: rgba(0,0,0,0.3); border-radius: 10px;">
-      <!-- Real axis -->
-      <div style="position: absolute; top: 50%; left: 10%; right: 10%; height: 2px; background: #4ecdc4; transform: translateY(-50%);"></div>
-      <div style="position: absolute; top: 50%; right: 5%; width: 0; height: 0; border-left: 8px solid #4ecdc4; border-top: 4px solid transparent; border-bottom: 4px solid transparent; transform: translateY(-50%);"></div>
-      <span style="position: absolute; top: 45%; right: -10px; font-size: 12px; color: #4ecdc4;">Re</span>
-      
-      <!-- Imaginary axis (standard) -->
-      <div style="position: absolute; left: 50%; top: 10%; bottom: 10%; width: 2px; background: #4ecdc4; transform: translateX(-50%);"></div>
-      <div style="position: absolute; left: 50%; top: 5%; width: 0; height: 0; border-bottom: 8px solid #4ecdc4; border-left: 4px solid transparent; border-right: 4px solid transparent; transform: translateX(-50%);"></div>
-      <span style="position: absolute; left: 55%; top: 0px; font-size: 12px; color: #4ecdc4;">Im</span>
-      <span style="position: absolute; left: 40%; top: 15px; font-size: 10px; color: #4ecdc4;">(standard)</span>
-    </div>
-    
-    <div style="background: rgba(0,0,0,0.3); padding: 10px; border-radius: 8px; margin-top: 15px;">
-      <p style="font-size: 11px; color: #aaeee8; margin: 5px 0;"><strong>Standard holomorphic:</strong></p>
-      <p style="font-size: 10px; color: #ccffff; margin: 0;">f₂ = (x+iy) + (u+iv)</p>
-    </div>
-  </div>
-
-</div>
-
-<!-- Obstruction Analysis -->
-<div style="background: rgba(255, 255, 255, 0.1); border-radius: 15px; padding: 25px; margin-top: 30px; border: 2px solid rgba(255, 255, 255, 0.3);">
-  <h4 style="text-align: center; color: #ffd700; margin-bottom: 20px;">🔍 COHOMOLOGICAL OBSTRUCTION ANALYSIS</h4>
-  
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-    
-    <div style="background: rgba(255, 107, 107, 0.2); padding: 15px; border-radius: 10px; border: 1px solid #ff6b6b;">
-      <h5 style="color: #ff6b6b; margin-bottom: 10px;">📊 Mathematical Formula:</h5>
-      <p style="color: #ffcccc; font-family: monospace; font-size: 14px; margin: 5px 0;">α = [x · dy ⊗ δᵥ]</p>
-      <p style="color: #ffaaaa; font-size: 11px; margin: 5px 0;">∈ H¹(Border, Ω^{0,1} ⊗ WF)</p>
-    </div>
-    
-    <div style="background: rgba(78, 205, 196, 0.2); padding: 15px; border-radius: 10px; border: 1px solid #4ecdc4;">
-      <h5 style="color: #4ecdc4; margin-bottom: 10px;">🔍 Geometric Meaning:</h5>
-      <p style="color: #ccffff; font-size: 11px; margin: 3px 0;">• <strong>x</strong>: Position-dependent</p>
-      <p style="color: #ccffff; font-size: 11px; margin: 3px 0;">• <strong>dy</strong>: Direction-sensitive</p>
-      <p style="color: #ccffff; font-size: 11px; margin: 3px 0;">• <strong>δᵥ</strong>: Sector-specific</p>
-    </div>
-    
-  </div>
-  
-  <div style="text-align: center; margin-top: 20px; padding: 15px; background: rgba(255, 217, 61, 0.2); border-radius: 10px; border: 1px solid #ffd93d;">
-    <h5 style="color: #ffd93d; margin-bottom: 10px;">⚖️ Legal Translation:</h5>
-    <p style="color: #ffeeaa; font-size: 12px; line-height: 1.4; margin: 0;">
-      "Constitutional trade barrier creating position-dependent value jumps,<br>
-      varying with location (x) and economic flow direction (y)"
-    </p>
-  </div>
-  
-  <div style="display: flex; justify-content: space-around; margin-top: 20px;">
-    <div style="text-align: center; padding: 10px; background: rgba(255, 0, 0, 0.3); border-radius: 8px; border: 1px solid #ff6666;">
-      <p style="color: #ffcccc; font-size: 11px; margin: 0;"><strong>α ≠ 0</strong></p>
-      <p style="color: #ffaaaa; font-size: 10px; margin: 5px 0 0 0;">⇒ Non-integrable</p>
-    </div>
-    <div style="text-align: center; padding: 10px; background: rgba(0, 255, 0, 0.3); border-radius: 8px; border: 1px solid #66ff66;">
-      <p style="color: #ccffcc; font-size: 11px; margin: 0;"><strong>α = 0</strong></p>
-      <p style="color: #aaffaa; font-size: 10px; margin: 5px 0 0 0;">⇒ Integrable</p>
-    </div>
-  </div>
-  
-</div>
-
-<!-- Key Insights -->
-<div style="background: rgba(138, 43, 226, 0.2); border-radius: 15px; padding: 20px; margin-top: 25px; border: 2px solid #8a2be2;">
-  <h4 style="text-align: center; color: #dda0dd; margin-bottom: 15px;">💡 KEY INSIGHTS</h4>
-  
-  <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px;">
-    
-    <div style="text-align: center; padding: 10px; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
-      <h5 style="color: #ffd700; font-size: 12px; margin-bottom: 8px;">🏗️ LOCAL PERFECTION</h5>
-      <p style="color: white; font-size: 10px; line-height: 1.3;">Holomorphic functions work perfectly within each nation</p>
-    </div>
-    
-    <div style="text-align: center; padding: 10px; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
-      <h5 style="color: #ffd700; font-size: 12px; margin-bottom: 8px;">⚡ GLOBAL FAILURE</h5>
-      <p style="color: white; font-size: 10px; line-height: 1.3;">Cannot merge into global holomorphic functions</p>
-    </div>
-    
-    <div style="text-align: center; padding: 10px; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
-      <h5 style="color: #ffd700; font-size: 12px; margin-bottom: 8px;">🔧 HYPERFUNCTION SOLUTION</h5>
-      <p style="color: white; font-size: 10px; line-height: 1.3;">Global hyperfunctions handle the turbulence gracefully</p>
-    </div>
-    
-  </div>
-</div>
-
-</div>
 
 ## The Basic Setup: A Planet of Nations
 
@@ -408,9 +253,11 @@ J₂ = [0  -1   0         0]
 - **Conflict zone**: Two different "orientations of i" meet
 - **The core issue**: Same physical space, but Nation 1 thinks "i" points in direction ∂/∂v while Nation 2 thinks "i" points in direction (√2/2)(∂/∂u + ∂/∂v) in the (u,v)-plane
 
-### Step 3: Local Holomorphic Functions and Hyperfunction Sheaves
+### Step 3: Local Holomorphic Functions - Nation by Nation
 
-#### Nation 1: Standard Complex Structure
+#### Nation 1: Standard Complex Structure (Inner Disk)
+
+**Territory:** U₁ = {(x,y,u,v) : x² + y² < 4} - the inner disk
 
 **Local coordinates and "i":**
 In Nation 1, the almost complex structure J₁ tells us:
@@ -432,7 +279,9 @@ Standard Cauchy-Riemann equations:
 f₁(x,y,u,v) = (x + iy) + (u + iv)
 ```
 
-#### Nation 2: Rotated Complex Structure
+#### Nation 2: Rotated Complex Structure (Outer Region)
+
+**Territory:** U₂ = {(x,y,u,v) : x² + y² > 1} - the outer region
 
 **Local coordinates and "i":**
 In Nation 2, we have the rotated complex structure J₂:
