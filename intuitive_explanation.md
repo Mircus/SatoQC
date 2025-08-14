@@ -1,6 +1,6 @@
-# The Nations and Turbulence: Understanding Quasi-Complex Manifolds
+# The Nations and Turbulence: Understanding Quasi-Complex Manifolds from the Hyperfunction Standpoint
 
-*An intuitive explanation for Daniele Struppa*
+*For Daniele Struppa*
 
 ## The Basic Setup: A Planet of Nations
 
@@ -540,23 +540,3 @@ This transforms the study of non-integrable geometry from "exotic pathology" to 
 
 *"Sometimes the most profound mathematics comes from learning to work gracefully with imperfection rather than demanding impossible perfection."*
 
-## Connections to Your Work, Daniele
-
-This framework naturally connects to several areas of your expertise:
-
-### Hyperfunctions and Boundary Values
-- **Your specialty**: Boundary values of holomorphic functions
-- **Our contribution**: Using these boundary values to handle non-integrable situations
-- **The connection**: Hyperfunctions as the "right" objects for controlled discontinuities
-
-### Several Complex Variables
-- **Complex analysis in higher dimensions** naturally leads to quasi-complex situations
-- **Our framework** provides tools for when classical SCF methods hit topological obstructions
-- **Potential applications** to understanding when SCV results can be extended
-
-### Applications to Modern Physics
-- **String theory**: Quasi-complex manifolds as parameter spaces
-- **Mirror symmetry**: Non-integrable structures as new geometric objects
-- **Condensed matter**: Local vs global analytic structures in many-body systems
-
-The beauty is that we're not replacing your classical complex analysis - we're extending it to handle situations where classical methods necessarily fail, using the very tools (hyperfunctions, boundary values) that you helped develop and perfect.
