@@ -1,3 +1,138 @@
+<div style="width: 100%; max-width: 800px; margin: 20px auto; background: #f8f9fa; border-radius: 10px; padding: 20px;">
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto;">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0a1628"/>
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">
+    Quasi-Complex Manifold: Two Nations with Different "Imaginary Units"
+  </text>
+  <!-- Nation 1 (Left side - Twisted structure) -->
+  <g>
+    <!-- Nation 1 territory -->
+    <circle cx="200" cy="200" r="120" fill="rgba(255, 107, 107, 0.3)" stroke="#ff6b6b" stroke-width="3"/>
+    <text x="200" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ff6b6b">
+      Nation 1
+    </text>
+    <text x="200" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ff9999">
+      Twisted Structure J
+    </text>
+<!-- Vertical axes for Nation 1 (twisted) -->
+<g transform="translate(200, 200)">
+  <!-- Real axis -->
+  <line x1="-60" y1="0" x2="60" y2="0" stroke="#ff6b6b" stroke-width="2"/>
+  <text x="70" y="5" font-family="Arial, sans-serif" font-size="12" fill="#ff6b6b">Re</text>
+  
+  <!-- Imaginary axis (twisted) -->
+  <line x1="0" y1="-60" x2="20" y2="-40" stroke="#ff6b6b" stroke-width="2"/>
+  <text x="25" y="-35" font-family="Arial, sans-serif" font-size="12" fill="#ff6b6b">Im (twisted)</text>
+  
+  <!-- Show the twist -->
+  <path d="M 0,-60 Q 10,-50 20,-40" stroke="#ff6b6b" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
+</g>
+
+<!-- Holomorphic function in Nation 1 -->
+<text x="200" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#ff9999">
+  f₁ = (x+iy) + (u+i(v+xy/2))
+</text>
+<text x="200" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ff9999">
+  "Holomorphic" w.r.t. twisted J
+</text>
+  </g>
+  <!-- Nation 2 (Right side - Standard structure) -->
+  <g>
+    <!-- Nation 2 territory -->
+    <circle cx="600" cy="200" r="120" fill="rgba(78, 205, 196, 0.3)" stroke="#4ecdc4" stroke-width="3"/>
+    <text x="600" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4ecdc4">
+      Nation 2
+    </text>
+    <text x="600" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#66d9d2">
+      Standard Structure J₀
+    </text>
+<!-- Vertical axes for Nation 2 (standard) -->
+<g transform="translate(600, 200)">
+  <!-- Real axis -->
+  <line x1="-60" y1="0" x2="60" y2="0" stroke="#4ecdc4" stroke-width="2"/>
+  <text x="70" y="5" font-family="Arial, sans-serif" font-size="12" fill="#4ecdc4">Re</text>
+  
+  <!-- Imaginary axis (standard) -->
+  <line x1="0" y1="-60" x2="0" y2="60" stroke="#4ecdc4" stroke-width="2"/>
+  <text x="10" y="-65" font-family="Arial, sans-serif" font-size="12" fill="#4ecdc4">Im (standard)</text>
+</g>
+
+<!-- Holomorphic function in Nation 2 -->
+<text x="600" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#66d9d2">
+  f₂ = (x+iy) + (u+iv)
+</text>
+<text x="600" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#66d9d2">
+  Standard holomorphic
+</text>
+  </g>
+  <!-- Border/Overlap region -->
+  <g>
+    <!-- Border region -->
+    <path d="M 320 200 Q 400 150 480 200 Q 400 250 320 200 Z" 
+          fill="rgba(255, 217, 61, 0.3)" stroke="#ffd93d" stroke-width="3" stroke-dasharray="10,5"/>
+    <text x="400" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffd93d">
+      Border Region
+    </text>
+    <text x="400" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ffd93d">
+      Turbulence Zone
+    </text>
+<!-- Conflict arrows -->
+<path d="M 350 200 L 370 200" stroke="#ffd93d" stroke-width="3" marker-end="url(#arrowhead)"/>
+<path d="M 450 200 L 430 200" stroke="#ffd93d" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+<!-- Hyperfunction jump -->
+<text x="400" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#ffd93d">
+  Hyperfunction Jump:
+</text>
+<text x="400" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#ffd93d">
+  h = δ_border(xy/2)
+</text>
+  </g>
+  <!-- Obstruction class visualization -->
+  <g transform="translate(400, 450)">
+    <rect x="-150" y="-60" width="300" height="120" fill="rgba(255, 255, 255, 0.1)" 
+          stroke="rgba(255, 255, 255, 0.3)" stroke-width="1" rx="10"/>
+    <text x="0" y="-35" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      Cohomological Obstruction
+    </text>
+    <text x="0" y="-15" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ffd93d">
+      α = [x · dy ⊗ δᵥ] ∈ H¹(Border, Ω^{0,1} ⊗ WF)
+    </text>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">
+      Position-dependent (x) · Direction-sensitive (dy) · Sector-specific (δᵥ)
+    </text>
+    <text x="0" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#ff9999">
+      α ≠ 0 ⟹ Non-integrable
+    </text>
+    <text x="0" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#66d9d2">
+      "Constitutional barrier to global trade harmony"
+    </text>
+  </g>
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+     refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ffd93d"/>
+    </marker>
+  </defs>
+  <!-- Legend -->
+  <g transform="translate(50, 500)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Key:</text>
+    <circle cx="0" cy="20" r="8" fill="rgba(255, 107, 107, 0.5)" stroke="#ff6b6b"/>
+    <text x="15" y="25" font-family="Arial, sans-serif" font-size="10" fill="#ff9999">Twisted "i" direction</text>
+    <circle cx="0" cy="40" r="8" fill="rgba(78, 205, 196, 0.5)" stroke="#4ecdc4"/>
+    <text x="15" y="45" font-family="Arial, sans-serif" font-size="10" fill="#66d9d2">Standard "i" direction</text>
+    <path d="M 0 60 L 20 60" stroke="#ffd93d" stroke-width="3" stroke-dasharray="5,3"/>
+    <text x="25" y="65" font-family="Arial, sans-serif" font-size="10" fill="#ffd93d">Border turbulence</text>
+  </g>
+</svg>
+</div>
+
+
+
+
 # The Nations and Turbulence: Understanding Quasi-Complex Manifolds from the Hyperfunction Standpoint
 
 *For Daniele Struppa*
